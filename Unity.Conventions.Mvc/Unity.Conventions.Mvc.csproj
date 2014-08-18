@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Unity.Conventions.Mvc</RootNamespace>
     <AssemblyName>Unity.Conventions.Mvc</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,10 +80,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bootstrapper.cs" />
     <None Include="pp\Bootstrapper.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="transform\Global.asax.cs.transform" />
     <Compile Include="UnityControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,9 @@
-﻿using System.Web.Mvc;
-using Microsoft.Practices.Unity;
+﻿using Microsoft.Practices.Unity;
+using System.Web.Mvc;
+using Unity.Conventions;
+using Unity.Conventions.Mvc;
 
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof($rootnamespace$.Bootstrapper), "Initialise")]
 namespace $rootnamespace$
 {
     public static class Bootstrapper
