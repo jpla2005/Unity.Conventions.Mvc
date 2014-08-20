@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Conventions;
-using Unity.Conventions.Mvc;
 
 namespace $rootnamespace$
 {
