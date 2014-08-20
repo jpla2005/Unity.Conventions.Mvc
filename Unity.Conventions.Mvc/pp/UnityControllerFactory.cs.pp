@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 
-namespace Unity.Conventions.Mvc
+namespace $rootnamespace$
 {
     public class UnityControllerFactory : DefaultControllerFactory
     {

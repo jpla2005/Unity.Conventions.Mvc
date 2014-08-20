@@ -1,12 +1,11 @@
-﻿using Microsoft.Practices.Unity;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Microsoft.Practices.Unity;
 using Unity.Conventions;
 using Unity.Conventions.Mvc;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof($rootnamespace$.Bootstrapper), "Initialise")]
 namespace $rootnamespace$
 {
-    public static class Bootstrapper
+    public static class UnityConventionsBootstrapper
     {
         public static IUnityContainer Initialise()
         {
@@ -19,14 +18,7 @@ namespace $rootnamespace$
         private static IUnityContainer BuildUnityContainer()
         {
             var container = IoCManager.Container;
-
-            RegisterTypes(container);
             return container;
-        }
-
-        private static void RegisterTypes(IUnityContainer container)
-        {
-            // Register here your custom types
         }
     }
 }
